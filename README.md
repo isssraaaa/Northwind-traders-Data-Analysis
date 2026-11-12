@@ -57,7 +57,7 @@ Les relations entre `Orders` et `Customers`, `Employees` ou `Shippers` ne sont d
 L’ERD ci-dessous représente les sept tables, leurs clés primaires, leurs clés étrangères et les relations décrites précédemment.
 
 
-![ERD de la base Northwind Traders]([documentation/erd_northwind.png](https://github.com/isssraaaa/Northwind-traders-Data-Analysis/blob/95075dedb3d21801bd1f6441057be965a5cd2b2c/erd_northwind.png))
+![ERD](https://github.com/isssraaaa/Northwind-traders-Data-Analysis/blob/11d56b4f749a50ca541f625bfa3045b5cfe9c9e8/erd_northwind.png)
 
 
 ## 4. Méthodologie de préparation des données
