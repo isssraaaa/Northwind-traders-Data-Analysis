@@ -1,7 +1,4 @@
--- ============================================================
 -- NORTHWIND TRADERS | ÉTUDE D'ANALYSE COMMERCIALE AVEC MYSQL
--- Préparation des données et analyse exploratoire
---
 -- Démarche : tables sources -> tables staging -> contrôles qualité
 --             -> préparation -> analyse exploratoire et métier
 --
@@ -15,12 +12,7 @@
 --   Les tables *_staging sont utilisées afin de préserver les tables
 --   sources. Vérifier les types et les colonnes si une autre version
 --   de Northwind est utilisée.
--- ============================================================
--- ============================================================
 
--- Les noms de tables/colonnes et les mots-clés/fonctions SQL restent
--- en anglais car ils correspondent au schéma de la base et au langage SQL.
--- Les commentaires et les intitulés des résultats sont rédigés en français.
 
 -- 01 | CRÉATION DES TABLES STAGING ET VÉRIFICATION DES TYPES
 
@@ -575,9 +567,8 @@ WHERE O.shippedDate IS NOT NULL
 GROUP BY SH.shipperID, companyName
 ORDER BY delai_moyen_expedition;
 
--- ============================================================
+
 -- 11 | PÉRIMÈTRE ET PRÉCAUTIONS D'INTERPRÉTATION
--- ============================================================
 -- 1. Le périmètre de cette version comprend sept tables :
 --    categories, customers, employees, orders, order_details,
 --    shippers et products.
@@ -590,4 +581,4 @@ ORDER BY delai_moyen_expedition;
 --    livraison effective n'est disponible pour mesurer le retard réel.
 -- 4. Le chiffre d'affaires est calculé au niveau de la ligne de commande
 --    à partir de UnitPrice, Quantity et Discount.
--- ============================================================
+
